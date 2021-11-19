@@ -18,10 +18,10 @@ istream& operator>>(istream& is, Point& p){
     }
     
     int x, y;
-    char ch11, ch2, ch3, ch4;
-    is >> ch11 >> x >> ch2 >> y >> ch3  >> ch4;
+    char ch2, ch3;
+    is >>  x >> ch2 >> y >> ch3;
     if (!is) return is;
-    if (ch1!='(' || ch2!=',' || ch3!=',' || ch4!=')') {
+    if (ch1!='(' || ch3 != ')') {
         is.clear(ios_base::failbit);
         return is;
         
