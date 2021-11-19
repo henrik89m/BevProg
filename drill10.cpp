@@ -46,7 +46,6 @@ void fill_from_file(vector<Point>& points, string& name) {
         points.push_back(p);
 }
 
-
 int main(){
     
     vector<Point> original_points;
@@ -77,8 +76,6 @@ int main(){
     
     if(original_points.size() != processed_points.size())
         cout << "Something's wrong!" << endl;
-    
-    
+     
     return 0;
 }
-
