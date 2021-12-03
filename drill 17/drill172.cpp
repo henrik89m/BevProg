@@ -38,7 +38,7 @@ int main()
     for (int k = 0; k < 10; k++)
         p2[k] = p1[k];
     
-    for (int k = 0; k < 10; ++k) cout << p2[k] << endl;
+    for (int k = 0; k < 10; k++) cout << p2[k] << endl;
     
     vector<int> v1 {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
     vector<int> v2 (10);
