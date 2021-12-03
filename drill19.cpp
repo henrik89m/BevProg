@@ -40,10 +40,11 @@ template<typename T>
 ostream& operator<<(ostream& os, vector<T>& v)
 {
     os << "{ ";
-    for (int i = 0; i < v.size(); i++) {
+    for (int i = 0; i < v.size(); i++)
+    {
         os << v[i] << (i < v.size() - 1 ? ", " : " ");
     }
-    os << "}\n";
+    os << "} " << endl;
 
     return os;
 }
@@ -53,12 +54,14 @@ istream& operator>>(std::istream& is, vector<T>& v)
 {
     char ch = 0;
     is >> ch;
-    if (ch != '{') {
+    if (ch != '{') 
+    {
         is.unget();
         return is;
     }
 
-    for (T val; is >> val; ) {
+    for (T val; is >> val; ) 
+    {
         v.push_back(val);
         is >> ch;
         if (ch != ',') break;
