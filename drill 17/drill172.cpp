@@ -47,5 +47,4 @@ int main()
     for (int v : v2) cout << v << endl;
     
     return 0;
-    
 }
